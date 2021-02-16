@@ -16,7 +16,7 @@ function App(){
                 setTimeout(()=>{
                     setTodos(todos)
                     setLoading(false)
-                },2000))
+                },1500))
     },[])
 
     function toggleTodo(id){
@@ -50,10 +50,8 @@ function App(){
                 {loading&& <Loader/>}
                 {todos.length?(<TodoList todos={todos} onToggle={toggleTodo}/>)
                 :(loading?null:<p>No todos</p>)}
-
             </div>
         </Context.Provider>
-
     );
 }
 
