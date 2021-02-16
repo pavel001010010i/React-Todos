@@ -16,7 +16,7 @@ function App(){
                 setTimeout(()=>{
                     setTodos(todos)
                     setLoading(false)
-                },1500))
+                },2000))
     },[])
 
     function toggleTodo(id){
